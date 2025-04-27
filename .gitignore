@@ -1,0 +1,47 @@
+# Vivado project files
+*.xpr
+*.xise
+*.ise
+*.vivado
+*.log
+*.jou
+
+# Vivado simulation and build outputs
+*.bit
+*.bin
+*.bin.tcl
+*.rpt
+*.drc
+*.lso
+*.ngc
+*.ngd
+*.xdc
+*.vcd
+*.wdb
+*.unr
+*.ucf
+
+# Vivado temporary and cache directories
+*.cache/
+*.hw/
+*.impl/
+*.sim/
+*.runs/
+*.vivado/
+
+# Vivado generated files
+*.tcl
+*.bak
+*.bak0
+*.backup
+*.history
+
+# Ignore IDE files and OS-generated files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Ignore any files/folders specific to user settings
+*.user
+*.log
