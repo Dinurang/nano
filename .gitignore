@@ -1,67 +1,11 @@
-# Ignore Vivado generated directories
-.cache/
-.hw/
-.ip_user_files/
-.sim/
-.xpr.cache/
-.webtalk/
-.gen/
-.bd/
+# Ignore everything
+*
 
-# Ignore folders with names ending in `.cache`, `.hw`, etc., at any depth
-**/*.cache/
-**/*.hw/
-**/*.ip_user_files/
-**/*.sim/
-**/*.xpr.cache/
-**/*.webtalk/
-**/*.gen/
-**/*.bd/
-
-
-
-# Ignore backup, log, and temp files
-*.log
-*.jou
-*.str
-*.tmp
-*.wdb
-*.wcfg
-*.xml
-*.html
-*.backup
-*.bxml
-
-# Ignore project runs and reports
-runs/
-*.rpt
-*.pb
-
-# Ignore Vivado database and status files
-vivado*.*history
-vivado*.*backup
-*.bak
-*.db
-*.ddb
-*.data
-*.xmsgs
-
-# Ignore simulation and synthesis artifacts
-*.bit
-*.bin
-*.svf
-*.mem
-*.mif
-
-# Ignore Vivado project files (optional)
-# Uncomment the next line if you do *not* want to include the Vivado project itself
- *.xpr
-
-# Accept only source files
-!*.v      # Verilog
-!*.vh     # Verilog headers
-!*.vhd    # VHDL
-!*.vhdl   # VHDL
-!*.xdc    # Xilinx Design Constraints
-!*.tcl    # TCL scripts (optional)
-!*.sv     # SystemVerilog
+# Except source files inside the srcs folder
+!srcs/**/*.v
+!srcs/**/*.vh
+!srcs/**/*.vhd
+!srcs/**/*.vhdl
+!srcs/**/*.sv
+!srcs/**/*.xdc
+!srcs/**/*.tcl
