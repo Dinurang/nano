@@ -1,11 +1,13 @@
 # Ignore everything
 *
 
-# Except source files inside the srcs folder
-!srcs/**/*.v
-!srcs/**/*.vh
-!srcs/**/*.vhd
-!srcs/**/*.vhdl
-!srcs/**/*.sv
-!srcs/**/*.xdc
-!srcs/**/*.tcl
+# === Allow HDL & constraint files only inside .srcs folders (recursively) ===
+!*/.srcs/**/*.v
+!*/.srcs/**/*.vh
+!*/.srcs/**/*.sv
+!*/.srcs/**/*.vhd
+!*/.srcs/**/*.vhdl
+!*/.srcs/**/*.xdc
+!*/.srcs/**/*.tcl
+
+
