@@ -1,47 +1,55 @@
-# Vivado project files
-*.xpr
-*.xise
-*.ise
-*.vivado
+# Ignore Vivado generated directories
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.xpr.cache/
+.webtalk/
+.gen/
+.bd/
+
+# Ignore backup, log, and temp files
 *.log
 *.jou
+*.str
+*.tmp
+*.wdb
+*.wcfg
+*.xml
+*.html
+*.backup
+*.bxml
 
-# Vivado simulation and build outputs
+# Ignore project runs and reports
+runs/
+*.rpt
+*.pb
+
+# Ignore Vivado database and status files
+vivado*.*history
+vivado*.*backup
+*.bak
+*.db
+*.ddb
+*.data
+*.xmsgs
+
+# Ignore simulation and synthesis artifacts
 *.bit
 *.bin
-*.bin.tcl
-*.rpt
-*.drc
-*.lso
-*.ngc
-*.ngd
-*.xdc
-*.vcd
-*.wdb
-*.unr
-*.ucf
+*.svf
+*.mem
+*.mif
 
-# Vivado temporary and cache directories
-*.cache/
-*.hw/
-*.impl/
-*.sim/
-*.runs/
-*.vivado/
+# Ignore Vivado project files (optional)
+# Uncomment the next line if you do *not* want to include the Vivado project itself
+# *.xpr
 
-# Vivado generated files
-*.tcl
-*.bak
-*.bak0
-*.backup
-*.history
-
-# Ignore IDE files and OS-generated files
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-
-# Ignore any files/folders specific to user settings
-*.user
-*.log
+# Accept only source files
+!*.v      # Verilog
+!*.vh     # Verilog headers
+!*.vhd    # VHDL
+!*.vhdl   # VHDL
+!*.xdc    # Xilinx Design Constraints
+!*.tcl    # TCL scripts (optional)
+!*.sv     # SystemVerilog
