@@ -8,6 +8,18 @@
 .gen/
 .bd/
 
+# Ignore folders with names ending in `.cache`, `.hw`, etc., at any depth
+**/*.cache/
+**/*.hw/
+**/*.ip_user_files/
+**/*.sim/
+**/*.xpr.cache/
+**/*.webtalk/
+**/*.gen/
+**/*.bd/
+
+
+
 # Ignore backup, log, and temp files
 *.log
 *.jou
