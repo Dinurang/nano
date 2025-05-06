@@ -43,7 +43,7 @@ vivado*.*backup
 
 # Ignore Vivado project files (optional)
 # Uncomment the next line if you do *not* want to include the Vivado project itself
-# *.xpr
+ *.xpr
 
 # Accept only source files
 !*.v      # Verilog
