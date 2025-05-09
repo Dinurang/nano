@@ -224,7 +224,7 @@ instruction_decoder : InstructionDecoder
            AddSubSelect      => addsubselector,
            RegSelect1        => regselect1,
            RegSelect2        => regselect2,
-           ImmediateValue    => twoway4bit_mux_in1,
+           ImmediateValue    => twoway4bit_mux_in2,
            LoadSelect        => loadselector,
            RegEN             => bank_reg_en_from_instruction_decoder );
            
