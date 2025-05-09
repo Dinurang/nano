@@ -29,12 +29,12 @@ D_FF0 : D_FF
                Clk => PCClock, 
                Q => PCOut(0));      
     D_FF1 : D_FF 
-    port map ( D => PCIn(0), 
+    port map ( D => PCIn(1), 
                Res => Reset, 
                Clk => PCClock, 
                Q => PCOut(1));               
     D_FF2 : D_FF 
-    port map ( D => PCIn(0), 
+    port map ( D => PCIn(2), 
                Res => Reset, 
                Clk => PCClock, 
                Q => PCOut(2)); 
